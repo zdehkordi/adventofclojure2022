@@ -14,4 +14,5 @@
   )
 
 
-(defn score_game [input] (reduce + (for [i (parse input)] (score (first i) (second i)))))
+(defn score_game [input] 
+  (reduce + (for [i (parse input)] (score (first i) (second i)))))
